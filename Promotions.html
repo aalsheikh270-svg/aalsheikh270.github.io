@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>Current Promotions | AeroStride</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
 * { 
     box-sizing: border-box; 
@@ -20,7 +19,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation */
 header {
     background: rgba(255, 255, 255, 0.98);
     padding: 0.8rem 0;
@@ -131,7 +129,6 @@ nav {
     display: block;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     min-height: 85vh;
@@ -204,7 +201,6 @@ nav {
     line-height: 1.8;
 }
 
-/* Featured Deal Section */
 .featured-section {
     padding: 10rem 4rem;
     max-width: 1400px;
@@ -340,7 +336,6 @@ nav {
     border: 2px solid #fff;
 }
 
-/* Promotions Section */
 .promotions-section {
     background: #f5f5f5;
     padding: 10rem 4rem;
@@ -504,7 +499,6 @@ nav {
     border-color: #fff;
 }
 
-/* Newsletter Section */
 .newsletter-section {
     padding: 10rem 4rem;
     max-width: 1400px;
@@ -576,7 +570,6 @@ nav {
     color: white;
 }
 
-/* Footer */
 footer {
     background: #000;
     color: #888;
@@ -587,24 +580,19 @@ footer {
     border-top: 1px solid #222;
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
     .promotions-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
     .promo-card:nth-child(3n) {
         border-right: 2px solid #000;
     }
-
     .promo-card:nth-child(2n) {
         border-right: none;
     }
-
     .promo-card:nth-child(4) {
         border-bottom: 2px solid #000;
     }
-
     .promo-card:nth-child(5),
     .promo-card:nth-child(6) {
         border-bottom: none;
@@ -616,120 +604,106 @@ footer {
         flex-direction: column;
         gap: 1.5rem;
     }
-
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
     }
-
     .nav-link {
         font-size: 0.8rem;
     }
-
     .featured-section,
     .promotions-section,
     .newsletter-section {
         padding: 6rem 2rem;
     }
-
     .featured-deal,
     .newsletter-box {
         padding: 3rem 2rem;
     }
-
     .promotions-grid {
         grid-template-columns: 1fr;
     }
-
     .promo-card {
         border-right: none;
         border-bottom: 2px solid #000;
     }
-
     .promo-card:nth-child(3n),
     .promo-card:nth-child(2n) {
         border-right: none;
     }
-
     .promo-card:nth-child(4),
     .promo-card:nth-child(5) {
         border-bottom: 2px solid #000;
     }
-
     .promo-card:last-child {
         border-bottom: none;
     }
-
     .promo-content {
         padding: 2rem;
     }
-
     .countdown-timer {
         gap: 1rem;
     }
-
     .time-number {
         font-size: 2rem;
     }
-
     .newsletter-form {
         flex-direction: column;
     }
 }
 </style>
 </head>
-
 <body>
 
 <header>
-        <nav>
-            <div class="logo-container">
-                <img class="logo-img" src="https://github.com/aalsheikh270-svg/homepage/blob/main/symbol.png?raw=true" alt="AeroStride Logo">
-                <span class="brand-name">AeroStride</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item has-dropdown">
-                    <a href="product-page.html" class="nav-link has-dropdown">Products</a>
-                    <div class="dropdown">
-                        <div class="dropdown-item">
-                            <a href="soccer.html" class="dropdown-link">Soccer Cleats</a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="basketball.html" class="dropdown-link">Basketball Sneakers</a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="running.html" class="dropdown-link">Running Shoes</a>
-                        </div>
-                        <div class="dropdown-item">
-                            <a href="service.html" class="dropdown-link">Custom Fit</a>
-                        </div>
+    <nav>
+        <div class="logo-container">
+            <img class="logo-img" src="https://github.com/aalsheikh270-svg/homepage/blob/main/symbol.png?raw=true" alt="AeroStride Logo">
+            <span class="brand-name">AeroStride</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item has-dropdown">
+                <a href="product-page.html" class="nav-link has-dropdown">Products</a>
+                <div class="dropdown">
+                    <div class="dropdown-item">
+                        <a href="soccer.html" class="dropdown-link">Soccer Cleats</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a href="About-Me.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Contact-Us.html" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Promotions.html" class="nav-link">Promotions</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Innovation.html" class="nav-link">Innovation</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Investment.html" class="nav-link">Investors</a>
-                </li>
-                <li class="nav-item">
-                    <a href="csr.html" class="nav-link">CSR</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                    <div class="dropdown-item">
+                        <a href="basketball.html" class="dropdown-link">Basketball Sneakers</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="running.html" class="dropdown-link">Running Shoes</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="service.html" class="dropdown-link">Custom Fit</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="About-Me.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="Contact-Us.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="Promotions.html" class="nav-link">Promotions</a>
+            </li>
+            <li class="nav-item">
+                <a href="Innovation.html" class="nav-link">Innovation</a>
+            </li>
+            <li class="nav-item">
+                <a href="Investment.html" class="nav-link">Investors</a>
+            </li>
+            <li class="nav-item">
+                <a href="csr.html" class="nav-link">CSR</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 <section class="hero">
     <div class="hero-content">
@@ -899,13 +873,10 @@ footer {
 </footer>
 
 <script>
-// Navigation dropdown
 document.addEventListener('DOMContentLoaded', function() {
     const productNav = document.querySelector('.nav-item.has-dropdown');
-    
     if (productNav) {
         const productLink = productNav.querySelector('.nav-link');
-        
         productLink.addEventListener('click', function(e) {
             if (window.innerWidth > 968) {
                 if (productNav.classList.contains('active')) {
@@ -914,11 +885,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     productNav.classList.add('active');
                 }
-            } else {
-                window.location.href = 'product-page.html';
             }
         });
-
         document.addEventListener('click', function(e) {
             if (!productNav.contains(e.target)) {
                 productNav.classList.remove('active');
@@ -927,7 +895,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Countdown timer
 function updateTimer() {
     const days = document.getElementById('days');
     const hours = document.getElementById('hours');
@@ -937,27 +904,12 @@ function updateTimer() {
     let d = parseInt(days.textContent);
     let h = parseInt(hours.textContent);
     let m = parseInt(minutes.textContent);
-    let s = parseInt(seconds.textContent);s--;
-            if (s < 0) {
-                s = 59;
-                m--;
-            }
-            if (m < 0) {
-                m = 59;
-                h--;
-            }
-            if (h < 0) {
-                h = 23;
-                d--;
-            }
-            
-            days.textContent = d.toString().padStart(2, '0');
-            hours.textContent = h.toString().padStart(2, '0');
-            minutes.textContent = m.toString().padStart(2, '0');
-            seconds.textContent = s.toString().padStart(2, '0');
-        }
-        
-        setInterval(updateTimer, 1000);
-    </script>
-</body>
-</html>
+    let s = parseInt(seconds.textContent);
+    
+    s--;
+    if (s < 0) {
+        s = 59;
+        m--;
+    }
+    if (m < 0) {
+        m =
