@@ -912,4 +912,40 @@ function updateTimer() {
         m--;
     }
     if (m < 0) {
-        m =
+        m = 59;
+        59;
+        h--;
+    }
+    if (h < 0) {
+        h = 23;
+        d--;
+    }
+    if (d < 0) {
+        d = 0;
+        h = 0;
+        m = 0;
+        s = 0;
+    }
+    
+    days.textContent = d.toString().padStart(2, '0');
+    hours.textContent = h.toString().padStart(2, '0');
+    minutes.textContent = m.toString().padStart(2, '0');
+    seconds.textContent = s.toString().padStart(2, '0');
+}
+
+setInterval(updateTimer, 1000);
+
+document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const emailInput = this.querySelector('.newsletter-input');
+    const email = emailInput.value;
+    
+    if (email) {
+        alert('Thank you for subscribing! You\'ll receive exclusive deals at ' + email);
+        emailInput.value = '';
+    }
+});
+</script>
+
+</body>
+</html>
